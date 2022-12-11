@@ -28,11 +28,13 @@ class _homepageState extends State<homepage> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
-          elevation: 0,
+          //elevation: 0,
           title: Image.asset(
-            'images/youtube.png',
+            'assets/images/youtube.png',
+            height: 125,
+            width: 200,
+            //alignment: Alignment.centerLeft,
           ),
-          centerTitle: true,
           actions: [
             IconButton(onPressed: () {}, icon: Icon(Icons.cast)),
             IconButton(onPressed: () {}, icon: Icon(Icons.notifications)),
@@ -40,7 +42,7 @@ class _homepageState extends State<homepage> {
             CircleAvatar(
               radius: 15,
               backgroundImage: NetworkImage(
-                  "https://www.woolha.com/media/2020/03/flutter-circleavatar-radius.jpg"),
+                  "https://cdn.imgbin.com/2/4/15/imgbin-computer-icons-portable-network-graphics-avatar-icon-design-avatar-DsZ54Du30hTrKfxBG5PbwvzgE.jpg"),
             )
           ],
         ),
