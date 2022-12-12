@@ -46,14 +46,14 @@ class _homepageState extends State<homepage> {
             )
           ],
         ),
-        bottomNavigationBar: BottomNavigationBar(
-            backgroundColor: Colors.black,
-            unselectedItemColor: Colors.black,
-            selectedItemColor: Colors.black,
-            items: [
+        bottomNavigationBar:
+            BottomNavigationBar(unselectedItemColor: Colors.white,
+                //selectedItemColor: Colors.white,
+                items: [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
                 label: "Home",
+                backgroundColor: Colors.black,
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.explore),
