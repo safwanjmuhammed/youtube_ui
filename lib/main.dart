@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -30,7 +31,7 @@ class _homepageState extends State<homepage> {
           backgroundColor: Colors.black,
           //elevation: 0,
           title: Image.asset(
-            'assets/images/youtube.png',
+            'images/youtube.png',
             height: 125,
             width: 200,
             //alignment: Alignment.centerLeft,
@@ -40,37 +41,38 @@ class _homepageState extends State<homepage> {
             IconButton(onPressed: () {}, icon: Icon(Icons.notifications)),
             IconButton(onPressed: () {}, icon: Icon(Icons.search)),
             CircleAvatar(
-              radius: 15,
-              backgroundImage: NetworkImage(
-                  "https://cdn.imgbin.com/2/4/15/imgbin-computer-icons-portable-network-graphics-avatar-icon-design-avatar-DsZ54Du30hTrKfxBG5PbwvzgE.jpg"),
+              radius: 16,
+              backgroundImage: AssetImage("images/avatar.jpeg"),
             )
           ],
         ),
         bottomNavigationBar:
-            BottomNavigationBar(unselectedItemColor: Colors.white,
+            BottomNavigationBar(//unselectedItemColor: Colors.white,
                 //selectedItemColor: Colors.white,
                 items: [
-              BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                label: "Home",
-                backgroundColor: Colors.black,
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.explore),
-                label: "Explore",
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.add_circle_outline),
-                label: 'Add',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.subscriptions),
-                label: 'Subscriptions',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.video_file),
-                label: 'Library',
-              ),
-            ]));
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ),
+            label: "Home",
+            backgroundColor: Colors.black,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.explore),
+            label: "Explore",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_circle_outline),
+            label: 'Add',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.subscriptions),
+            label: 'Subscriptions',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.video_file),
+            label: 'Library',
+          ),
+        ]));
   }
 }
