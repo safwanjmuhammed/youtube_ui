@@ -22,7 +22,7 @@ AppBar topbar = AppBar(
       ),
       Padding(
           padding: EdgeInsets.only(right: 20.0),
-          child: CircleAvatar(
+          child: CircleAvatar(radius: 18,
             backgroundImage: AssetImage("assets/images/avatar.jpeg"),
           ))
     ]);
