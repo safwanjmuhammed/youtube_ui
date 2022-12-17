@@ -45,33 +45,49 @@ class _homepageState extends State<homepage> {
             )
           ],
         ),
-        bottomNavigationBar:
-            BottomNavigationBar(//unselectedItemColor: Colors.white,
-                //selectedItemColor: Colors.white,
-                items: [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-            ),
-            label: "Home",
-            backgroundColor: Colors.black,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.explore),
-            label: "Explore",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.add_circle_outline),
-            label: 'Add',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.subscriptions),
-            label: 'Subscriptions',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.video_file),
-            label: 'Library',
-          ),
-        ]));
+        body: SingleChildScrollView(
+            child: Column(
+          children: <Widget>[
+            Stack(children: <Widget>[
+              Image.asset("images/images.png"),
+              Positioned.fill(
+                  child: Align(
+                      alignment: Alignment.bottomRight,
+                      child: Container(
+                        padding: EdgeInsets.all(4.0),
+                        child: Text("7:8"),
+                        color: Colors.white,
+                      )))
+            ])
+          ],
+        )),
+        bottomNavigationBar: BottomNavigationBar(
+            //unselectedItemColor: Colors.white,
+            //selectedItemColor: Colors.white,
+            items: [
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.home,
+                ),
+                label: "Home",
+                backgroundColor: Colors.black,
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.explore),
+                label: "Explore",
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.add_circle_outline),
+                label: 'Add',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.subscriptions),
+                label: 'Subscriptions',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.video_file),
+                label: 'Library',
+              ),
+            ]));
   }
 }
