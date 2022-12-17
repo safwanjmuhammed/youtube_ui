@@ -45,19 +45,22 @@ class _homepageState extends State<homepage> {
             )
           ],
         ),
+
+        //body
         body: SingleChildScrollView(
             child: Column(
           children: <Widget>[
             Stack(children: <Widget>[
-              Image.asset("images/images.png"),
+              Image.asset(
+                "images/images.png",
+              ),
               Positioned.fill(
                   child: Align(
                       alignment: Alignment.bottomRight,
                       child: Container(
-                        padding: EdgeInsets.all(4.0),
-                        child: Text("7:8"),
-                        color: Colors.white,
-                      )))
+                          padding: EdgeInsets.all(4.0),
+                          child: Text("7:8"),
+                          color: Colors.white)))
             ])
           ],
         )),
