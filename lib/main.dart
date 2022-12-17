@@ -52,14 +52,14 @@ class _HomePageState extends State<HomePage> {
           color: Colors.black,
           child: ListTile(
             leading: CircleAvatar(
-              backgroundImage: AssetImage('assests/avatar.jpg'),
+              backgroundImage: AssetImage('/images/flutter.jpeg'),
             ),
             title: Text(
               "$title",
               textAlign: TextAlign.start,
             ),
             subtitle: Text(
-              "Navigation bar - Flutter widget of the week",
+              "Flutter doc . 1.2 lakhs views.11 days ago",
             ),
             trailing: Icon(Icons.more_vert, color: Colors.white),
           ),
@@ -83,16 +83,16 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            eachvideo("assests/images/images.png",
-                "Working With Databases In Flutter"),
-            eachvideo("assests/images/images.png",
-                "Working With Databases In Flutter"),
-            eachvideo("assests/images/images.png",
-                "Working With Databases In Flutter"),
-            eachvideo("assests/images/images.png",
-                "Working With Databases In Flutter"),
             eachvideo(
-                "assests/thumb4.png", "Working With Databases In Flutter"),
+                "/images/images.png", "Working With Databases In Flutter"),
+            eachvideo(
+                "/images/images.png", "Working With Databases In Flutter"),
+            eachvideo(
+                "/images/images.png", "Working With Databases In Flutter"),
+            eachvideo(
+                "/images/images.png", "Working With Databases In Flutter"),
+            eachvideo(
+                "/images/images.png", "Working With Databases In Flutter"),
           ],
         ),
       ),

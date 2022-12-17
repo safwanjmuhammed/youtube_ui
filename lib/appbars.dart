@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 AppBar topbar = AppBar(
   backgroundColor: Colors.black,
   title: Image.asset(
-    'assests/yt_logo_rgb_dark.png',
+    'images/ytlogo.png',
     fit: BoxFit.cover,
     width: 100.0,
   ),
