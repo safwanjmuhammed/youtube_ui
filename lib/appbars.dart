@@ -1,33 +1,31 @@
 import 'package:flutter/material.dart';
 
 AppBar topbar = AppBar(
-  backgroundColor: Colors.black,
-  title: Image.asset(
-    'images/ytlogo.png',
-    fit: BoxFit.cover,
-    width: 100.0,
-  ),
-  actions: <Widget>[
-    Padding(
-      padding: EdgeInsets.only(right: 20.0),
-      child: Icon(
-        Icons.videocam,
-      ),
+    backgroundColor: Colors.black,
+    title: Image.asset(
+      'images/ytlogo.png',
+      fit: BoxFit.cover,
+      width: 100.0,
     ),
-    Padding(
-      padding: EdgeInsets.only(right: 20.0),
-      child: Icon(
-        Icons.search,
+    actions: <Widget>[
+      Padding(
+        padding: EdgeInsets.only(right: 20.0),
+        child: Icon(
+          Icons.videocam,
+        ),
       ),
-    ),
-    Padding(
-      padding: EdgeInsets.only(right: 20.0),
-      child: Icon(
-        Icons.account_circle,
+      Padding(
+        padding: EdgeInsets.only(right: 20.0),
+        child: Icon(
+          Icons.search,
+        ),
       ),
-    ),
-  ],
-);
+      Padding(
+          padding: EdgeInsets.only(right: 20.0),
+          child: CircleAvatar(
+            backgroundImage: AssetImage("/images/avatar.jpeg"),
+          ))
+    ]);
 
 Color normalcolor = Colors.white24;
 
