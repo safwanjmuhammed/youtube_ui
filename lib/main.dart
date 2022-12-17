@@ -51,9 +51,7 @@ class _HomePageState extends State<HomePage> {
         Container(
           color: Colors.black,
           child: ListTile(
-            leading: CircleAvatar(
-              backgroundImage: AssetImage('/images/flutter.jpeg'),
-            ),
+            leading: Icon(Icons.circle_rounded),
             title: Text(
               "$title",
               textAlign: TextAlign.start,
@@ -84,15 +82,15 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: <Widget>[
             eachvideo(
-                "/images/images.png", "Working With Databases In Flutter"),
+                "assets/images/images.png", "Working With Databases In Flutter"),
             eachvideo(
-                "/images/images.png", "Working With Databases In Flutter"),
+                "assets/images/images.png", "Working With Databases In Flutter"),
             eachvideo(
-                "/images/images.png", "Working With Databases In Flutter"),
+                "assets/images/images.png", "Working With Databases In Flutter"),
             eachvideo(
-                "/images/images.png", "Working With Databases In Flutter"),
+                "assets/images/images.png", "Working With Databases In Flutter"),
             eachvideo(
-                "/images/images.png", "Working With Databases In Flutter"),
+                "assets/images/images.png", "Working With Databases In Flutter"),
           ],
         ),
       ),

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 AppBar topbar = AppBar(
     backgroundColor: Colors.black,
     title: Image.asset(
-      'images/ytlogo.png',
+      'assets/images/ytlogo.png',
       fit: BoxFit.cover,
       width: 100.0,
     ),
@@ -23,7 +23,7 @@ AppBar topbar = AppBar(
       Padding(
           padding: EdgeInsets.only(right: 20.0),
           child: CircleAvatar(
-            backgroundImage: AssetImage("/images/avatar.jpeg"),
+            backgroundImage: AssetImage("assets/images/avatar.jpeg"),
           ))
     ]);
 
