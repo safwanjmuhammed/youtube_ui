@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -55,13 +57,30 @@ class _homepageState extends State<homepage> {
                 "images/images.png",
               ),
               Positioned.fill(
+                  bottom: 10,
+                  right: 10,
                   child: Align(
                       alignment: Alignment.bottomRight,
                       child: Container(
                           padding: EdgeInsets.all(4.0),
                           child: Text("7:8"),
                           color: Colors.white)))
-            ])
+            ]),
+
+            //
+            SizedBox(
+                height: 60.0,
+                child: ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('images/flutter.png'),
+                  ),
+                  textColor: Colors.white,
+                  title: Text('Navitation bar - Flutter widget of the week'),
+                  subtitle: Text(
+                    'flutter . 17k views. 1 day ago',
+                    selectionColor: Colors.grey,
+                  ),
+                ))
           ],
         )),
         bottomNavigationBar: BottomNavigationBar(
