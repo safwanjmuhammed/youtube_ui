@@ -23,7 +23,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  Widget eachvideo(String asset, String title) {
+  Widget eachvideo(String asset, String title, String subtitle) {
     return Column(
       children: <Widget>[
         Stack(
@@ -51,13 +51,13 @@ class _HomePageState extends State<HomePage> {
         Container(
           color: Colors.black,
           child: ListTile(
-            leading: Icon(Icons.circle_rounded),
+            leading: Icon(Icons.account_circle,size: 40,),
             title: Text(
               "$title",
               textAlign: TextAlign.start,
             ),
             subtitle: Text(
-              "Flutter doc . 1.2 lakhs views.11 days ago",
+              "$subtitle",
             ),
             trailing: Icon(Icons.more_vert, color: Colors.white),
           ),
@@ -82,15 +82,15 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: <Widget>[
             eachvideo(
-                "assets/images/images.png", "Working With Databases In Flutter"),
+                "assets/images/images.png", "Working With Databases In Youtube","GeekWhat  . 25 lacks . 1  day ago"),
             eachvideo(
-                "assets/images/images.png", "Working With Databases In Flutter"),
+                "assets/images/images.png", "Working With Databases In Flutter",""),
             eachvideo(
-                "assets/images/images.png", "Working With Databases In Flutter"),
+                "assets/images/images.png", "Working With Databases In Flutter",""),
             eachvideo(
-                "assets/images/images.png", "Working With Databases In Flutter"),
+                "assets/images/images.png", "Working With Databases In Flutter",""),
             eachvideo(
-                "assets/images/images.png", "Working With Databases In Flutter"),
+                "assets/images/images.png", "Working With Databases In Flutter",""),
           ],
         ),
       ),
