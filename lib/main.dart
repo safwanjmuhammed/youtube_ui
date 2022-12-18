@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
             eachvideo(
                 "assets/images/windows.webp", "Windows 12.1","AR 47 . 100K views . 3 hours ago","30:54"),
             eachvideo(
-                "assets/images/peaky.webp", "How Cillian Murphy Perfected Tommy Shelby","HBO . 500K views ago","7:02"),
+                "assets/images/peaky.webp", "How Cillian Murphy Perfected Tommy Shelby","HBO . 500K views . 5 days ago","7:02"),
           ],
         ),
       ),
