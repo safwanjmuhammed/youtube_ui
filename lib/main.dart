@@ -23,7 +23,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  Widget eachvideo(String asset, String title, String subtitle) {
+  Widget eachvideo(String asset, String title, String subtitle, String duration) {
     return Column(
       children: <Widget>[
         Stack(
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.black,
                   padding: EdgeInsets.all(4.0),
                   child: Text(
-                    "20:10",
+                    "$duration",
                   ),
                 ),
               ),
@@ -82,15 +82,15 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: <Widget>[
             eachvideo(
-                "assets/images/images.png", "Working With Databases In Youtube","GeekWhat  . 25 lacks . 1  day ago"),
+                "assets/images/images.png", "Working With Databases In Youtube","GeekWhat  . 250k views . 1  day ago","25:10"),
             eachvideo(
-                "assets/images/images.png", "Working With Databases In Flutter",""),
+                "assets/images/flutterthumb.webp", "Build  an animated app with rive and flutter","The flutter way . 23k views . 2 hours ago","5:10"),
             eachvideo(
-                "assets/images/images.png", "Working With Databases In Flutter",""),
+                "assets/images/nothingthumb.webp", "Nothing OS 1.5 Beta!","Nothing . 55k views . 1 hours ago","27:10"),
             eachvideo(
-                "assets/images/images.png", "Working With Databases In Flutter",""),
+                "assets/images/windows.webp", "Windows 12.1","AR 47 . 100K views . 3 hours ago","30:54"),
             eachvideo(
-                "assets/images/images.png", "Working With Databases In Flutter",""),
+                "assets/images/peaky.webp", "How Cillian Murphy Perfected Tommy Shelby","HBO . 500K views ago","7:02"),
           ],
         ),
       ),
