@@ -77,13 +77,16 @@ BottomAppBar bottomappbar = BottomAppBar(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               SizedBox(
-                height: 4,
+                height: 0,
               ),
               Icon(
                 Icons.add_circle_outline,
-                size: 35,
+                //size: 35,
                 color: normalcolor,
               ),
+              Text(
+                "Add",style: TextStyle(color: normalcolor),
+                ),
             ]),
         Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
