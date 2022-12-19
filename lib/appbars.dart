@@ -84,10 +84,6 @@ BottomAppBar bottomappbar = BottomAppBar(
                 size: 35,
                 color: normalcolor,
               ),
-              Text(
-                "",
-                style: TextStyle(color: normalcolor),
-              ),
             ]),
         Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
