@@ -11,18 +11,25 @@ AppBar topbar = AppBar(
       Padding(
         padding: EdgeInsets.only(right: 20.0),
         child: Icon(
-          Icons.videocam,
+          Icons.cast,
         ),
       ),
       Padding(
         padding: EdgeInsets.only(right: 20.0),
         child: Icon(
-          Icons.search,
+          Icons.notifications_sharp,
+        ),
+      ),
+      Padding(
+        padding: EdgeInsets.only(right: 20.0),
+        child: Icon(
+          Icons.search_sharp,
         ),
       ),
       Padding(
           padding: EdgeInsets.only(right: 20.0),
-          child: CircleAvatar(radius: 18,
+          child: CircleAvatar(
+            radius: 18,
             backgroundImage: AssetImage("assets/images/avatar.jpeg"),
           ))
     ]);
@@ -67,6 +74,22 @@ BottomAppBar bottomappbar = BottomAppBar(
           ],
         ),
         Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              SizedBox(
+                height: 4,
+              ),
+              Icon(
+                Icons.add_circle_outline,
+                size: 35,
+                color: normalcolor,
+              ),
+              Text(
+                "",
+                style: TextStyle(color: normalcolor),
+              ),
+            ]),
+        Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Icon(
@@ -75,19 +98,6 @@ BottomAppBar bottomappbar = BottomAppBar(
             ),
             Text(
               "Subscriptions",
-              style: TextStyle(color: normalcolor),
-            ),
-          ],
-        ),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            Icon(
-              Icons.email,
-              color: normalcolor,
-            ),
-            Text(
-              "Inbox",
               style: TextStyle(color: normalcolor),
             ),
           ],
